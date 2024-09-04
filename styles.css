@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,arial;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: linear-gradient(315deg, #ffffff, #d7e1ec);
+}
+.wrapper{
+    display: inline-flex;
+    justify-content: center;
+   
+}
+.wrapper .icon{
+    cursor: pointer;
+    margin: 0 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+.d{
+    border-radius: 50%;
+  border-width: 2px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.tooltip{
+    font-size: 25px;
+    line-height: 60px;
+    background: #fff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+}
+.tooltip::before{
+position: absolute;
+content: "";
+height: 15px;
+width: 15px;
+background: red;
+ bottom: -10px;
+left: 50%;
+
+
+    }
